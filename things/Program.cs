@@ -55,6 +55,8 @@ internal class Program
 	{
 		Car car1 = new Car("yo mama", "skibidi", 2003);
 		Console.WriteLine(car1.ToString());
+
+		Console.WriteLine("yeet");
 	}
 
 	public class Car
