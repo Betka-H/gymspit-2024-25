@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "things", "things\things.csproj", "{8FC54423-E772-42DA-BFC7-B3D27A736C28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fiks", "fiks\fiks.csproj", "{27AA8989-7BE2-47C0-8F99-52237BC5F8EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{8FC54423-E772-42DA-BFC7-B3D27A736C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FC54423-E772-42DA-BFC7-B3D27A736C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FC54423-E772-42DA-BFC7-B3D27A736C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27AA8989-7BE2-47C0-8F99-52237BC5F8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27AA8989-7BE2-47C0-8F99-52237BC5F8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27AA8989-7BE2-47C0-8F99-52237BC5F8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27AA8989-7BE2-47C0-8F99-52237BC5F8EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -49,7 +49,7 @@ Console.WriteLine("alright something different");
 
 		Console.WriteLine($"\naverage: {sum / numbers.Length}");*/
 
-internal class Program
+/* internal class Program
 {
 	private static void Main(string[] args)
 	{
@@ -78,4 +78,217 @@ internal class Program
 		}
 	}
 
+} */
+
+/* 
+internal class Program
+{
+	class bike
+	{
+		protected int cadence;
+		protected int speed;
+		protected int gear;
+		public bike(int c, int s, int g)
+		{
+			cadence = c;
+			speed = s;
+			gear = g;
+		}
+		public virtual void printStats()
+		{
+			Console.Write($"cadence: {cadence}, speed: {speed}, gear: {gear}");
+		}
+	}
+	class roadBike : bike
+	{
+		protected int tireWidth;
+		public roadBike(int c, int s, int g, int t) : base(c, s, g)
+		{
+			tireWidth = t;
+		}
+		public override void printStats()
+		{
+			base.printStats();
+			Console.WriteLine($", tire width: {tireWidth}");
+		}
+	}
+	class mountainBike : bike
+	{
+		private int suspension;
+		public mountainBike(int c, int s, int g, int sus) : base(c, s, g)
+		{
+			suspension = sus;
+		}
+		public override void printStats()
+		{
+			base.printStats();
+			Console.WriteLine($", suspension: {suspension}");
+		}
+	}
+
+	class basicBikeRepair
+	{
+		public basicBikeRepair(bike b)
+		{
+			tryRepair(b);
+		}
+
+		public virtual void tryRepair(bike b)
+		{
+			if (b.GetType() != typeof(bike))
+			{
+				Console.WriteLine("cannot repair non-regular bike");
+			}
+			else
+			{
+				Console.WriteLine("cool regular bike");
+			}
+		}
+	}
+	class roadBikeRepair : basicBikeRepair
+	{
+		public roadBikeRepair(bike b) : base(b)
+		{
+			tryRepair(b);
+		}
+
+		public override void tryRepair(bike b)
+		{
+			if (b.GetType() != typeof(roadBike))
+			{
+				Console.WriteLine("cannot repair non-road bike");
+			}
+			else
+			{
+				Console.WriteLine("cool road bike");
+			}
+		}
+	}
+	class mountainBikeRepair : basicBikeRepair
+	{
+		public mountainBikeRepair(bike b) : base(b)
+		{
+			if (b.GetType() != typeof(mountainBike))
+			{
+				Console.WriteLine("cannot repair non-mountain bike");
+			}
+			else
+			{
+				Console.WriteLine("cool mountain bike");
+			}
+		}
+	}
+
+	static void Main(string[] args)
+	{
+		bike bikeBike = new bike(-2, -1, 0);
+		bike bikeRoad = new roadBike(1, 2, 3, 4);
+		bike bikeMountain = new mountainBike(5, 6, 7, 8);
+
+		basicBikeRepair b1 = new basicBikeRepair(bikeRoad);
+		b1 = new basicBikeRepair(bikeBike);
+		b1 = new roadBikeRepair(bikeRoad);
+		b1 = new roadBikeRepair(bikeBike);
+	}
+}
+ */
+
+/* 
+internal class Program
+{
+	abstract class document
+	{
+		public virtual void display()
+		{
+			Console.WriteLine("document");
+		}
+	}
+
+	class invoiceDoc : document
+	{
+		string contents;
+		public invoiceDoc(string c)
+		{
+			contents = c;
+		}
+
+		public override void display()
+		{
+			base.display();
+			Console.WriteLine($"invoice contents: {contents}");
+		}
+	}
+	class reportDoc : document
+	{
+		string contents;
+		public reportDoc(string c)
+		{
+			contents = c;
+		}
+
+		public override void display()
+		{
+			base.display();
+			Console.WriteLine($"report contents: {contents}");
+		}
+	}
+
+	abstract class docFactory
+	{
+		public virtual document createDoc(string c)
+		{
+			Console.WriteLine("creating document");
+			return null;
+		}
+	}
+
+	class invoiceFac : docFactory
+	{
+		public override document createDoc(string c)
+		{
+			base.createDoc();
+			return new invoiceDoc(c);
+		}
+	}
+	class reportFac : docFactory
+	{
+		public override document createDoc(string c)
+		{
+			base.createDoc();
+			return new reportDoc(c);
+		}
+	}
+
+	private static void Main(string[] args)
+	{
+		docFactory invoiceFactory = new invoiceFac();
+		docFactory reportFactory = new reportFac();
+		invoiceFactory.createDoc();
+	}
+}
+ */
+
+internal class Program
+{
+	public interface document
+	{
+	}
+
+	public interface docFactory
+	{
+		public document createDoc();
+	}
+
+	class displayDoc
+	{
+		void printContents()
+		{
+			Console.WriteLine();
+		}
+	}
+
+	private static void Main(string[] args)
+	{
+
+	}
 }

@@ -12,3 +12,17 @@ C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25\things\obj\Debug\net7.0\refi
 C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25\things\obj\Debug\net7.0\things.pdb
 C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25\things\obj\Debug\net7.0\things.genruntimeconfig.cache
 C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25\things\obj\Debug\net7.0\ref\things.dll
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\bin\Debug\net7.0\things.exe
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\bin\Debug\net7.0\things.deps.json
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\bin\Debug\net7.0\things.runtimeconfig.json
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\bin\Debug\net7.0\things.dll
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\bin\Debug\net7.0\things.pdb
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\obj\Debug\net7.0\things.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\obj\Debug\net7.0\things.AssemblyInfoInputs.cache
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\obj\Debug\net7.0\things.AssemblyInfo.cs
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\obj\Debug\net7.0\things.csproj.CoreCompileInputs.cache
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\obj\Debug\net7.0\things.dll
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\obj\Debug\net7.0\refint\things.dll
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\obj\Debug\net7.0\things.pdb
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\obj\Debug\net7.0\things.genruntimeconfig.cache
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\things\obj\Debug\net7.0\ref\things.dll

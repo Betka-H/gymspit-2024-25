@@ -1,0 +1,14 @@
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\bin\Debug\net7.0\fiks.exe
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\bin\Debug\net7.0\fiks.deps.json
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\bin\Debug\net7.0\fiks.runtimeconfig.json
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\bin\Debug\net7.0\fiks.dll
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\bin\Debug\net7.0\fiks.pdb
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\obj\Debug\net7.0\fiks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\obj\Debug\net7.0\fiks.AssemblyInfoInputs.cache
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\obj\Debug\net7.0\fiks.AssemblyInfo.cs
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\obj\Debug\net7.0\fiks.csproj.CoreCompileInputs.cache
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\obj\Debug\net7.0\fiks.dll
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\obj\Debug\net7.0\refint\fiks.dll
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\obj\Debug\net7.0\fiks.pdb
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\obj\Debug\net7.0\fiks.genruntimeconfig.cache
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\fiks\obj\Debug\net7.0\ref\fiks.dll
