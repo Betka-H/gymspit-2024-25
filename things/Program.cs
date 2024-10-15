@@ -268,25 +268,91 @@ internal class Program
 }
  */
 
+/* pizza
 internal class Program
 {
-	public interface document
+	public class pizza
 	{
-	}
-
-	public interface docFactory
-	{
-		public document createDoc();
-	}
-
-	class displayDoc
-	{
-		void printContents()
+		public float diameter { get; set; }
+		public string sauce { get; set; }
+		public List<string> toppings { get; set; }
+		public pizza()
 		{
-			Console.WriteLine();
+
+		}
+
+		public void serve()
+		{
+			Console.WriteLine($"diameter: {diameter}, sauce: {sauce}, toppings: {printToppings()}");
+		}
+		string printToppings()
+		{
+			string result = " ";
+			foreach (string t in toppings)
+			{
+				result += t + ", ";
+			}
+			return result;
 		}
 	}
 
+	public class pizzaBuilder
+	{
+		public float diameter { get; set; } = 32;
+		public string sauce { get; set; } = "tomato";
+		public List<string> toppings { get; set; } = new List<string> { "cheese", "more cheese" };
+		public pizzaBuilder()
+		{
+
+		}
+
+		public pizzaBuilder withDiameter(float dia)
+		{
+			diameter = dia;
+			return this;
+		}
+		public pizzaBuilder withSauce(string sau)
+		{
+			sauce = sau;
+			return this;
+		}
+		public pizzaBuilder withToppings(List<string> top)
+		{
+			toppings = top;
+			return this;
+		}
+		public void addTopping(string top)
+		{
+			toppings.Add(top);
+		}
+
+		public pizza build()
+		{
+			pizza buildPizza = new pizza();
+			{
+				buildPizza.diameter = diameter;
+				buildPizza.sauce = sauce;
+				buildPizza.toppings = toppings;
+			}
+			return buildPizza;
+		}
+	}
+
+	private static void Main(string[] args)
+	{
+		pizzaBuilder pBuilder = new pizzaBuilder();
+		pBuilder.withDiameter(42).withSauce("tomato").withToppings(new List<string> { "cheese", "loads of cheese" });
+		pizza pizza1 = pBuilder.build();
+		pBuilder.withDiameter(16).withSauce("no sauce");
+		pizza pizza2 = pBuilder.build();
+		pizza1.serve();
+		pizza2.serve();
+	}
+}
+ */
+
+internal class Program
+{
 	private static void Main(string[] args)
 	{
 
