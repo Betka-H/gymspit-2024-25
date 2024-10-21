@@ -351,6 +351,14 @@ internal class Program
 }
  */
 
+/* 
+Ahoj, připravte si prosím do příště strukturu tříd na počítání výrazů podle schématu, za týden s ní budeme pracovat (jedná se o composite pattern btw).
+Můžete si zkusit i použití tříd pro vyřešení výrazu, ale hlavní je ta struktura.
+Třída BinaryExpression bere v konstruktoru dvě instance IExpression (left a right).
+Třída UnaryExpression pouze jednu.
+Třída Number také implementuje IExpression, ale její evaluate metoda vrací pouze číslo, které dostane v konstruktoru
+ */
+
 internal class Program
 {
 	private static void Main(string[] args)
