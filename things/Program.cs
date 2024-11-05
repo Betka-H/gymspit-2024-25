@@ -352,17 +352,271 @@ internal class Program
  */
 
 /* 
-Ahoj, připravte si prosím do příště strukturu tříd na počítání výrazů podle schématu, za týden s ní budeme pracovat (jedná se o composite pattern btw).
-Můžete si zkusit i použití tříd pro vyřešení výrazu, ale hlavní je ta struktura.
+struktura tříd na počítání výrazů podle schématu (composite pattern)
 Třída BinaryExpression bere v konstruktoru dvě instance IExpression (left a right).
 Třída UnaryExpression pouze jednu.
 Třída Number také implementuje IExpression, ale její evaluate metoda vrací pouze číslo, které dostane v konstruktoru
  */
+/* 
+internal class Program
+{
+
+	class IExpression
+	{
+		number number;
+
+		public IExpression(number num)
+		{
+			number = num;
+		}
+
+		number evaluate()
+		{
+			return number;
+		}
+	}
+
+	class unaryExpression : IExpression
+	{
+		number number;
+
+		public unaryExpression(number num)
+		{
+			number = num;
+		}
+	}
+	class binaryExpression : IExpression
+	{
+
+	}
+	class number : IExpression
+	{
+		protected float value;
+
+		public number(float val)
+		{
+			value = val;
+		}
+	}
+
+	private static void Main(string[] args)
+	{
+		number a = new number(420.69f);
+	}
+}
+ */
+/* 
+internal class Program
+{
+	class IExpression
+	{
+		double number;
+
+		public IExpression(double num)
+		{
+			number = num;
+		}
+
+		double evaluate()
+		{
+			return number;
+		}
+	}
+
+	class numberExpression : IExpression
+	{
+		public double number;
+
+		public numberExpression(double num)
+		{
+			number = num;
+		}
+	}
+
+	class addExpression : IExpression
+	{
+		public addExpression()
+		{
+
+		}
+	}
+
+	class builder : IExpression
+	{
+		double number;
+
+		public builder(double num)
+		{
+			number = num;
+		}
+
+		public IExpression add(double num)
+		{
+			return add(num);
+		}
+		public IExpression add(IExpression exp)
+		{
+			return addExpression(exp);
+		}
+
+	}
+
+	private static void Main(string[] args)
+	{
+		var result = new builder(0).add().multiply();
+	}
+}
+ */
+
+
+/* 
+Zadání: Evidence knih v knihovně
+Vytvořte konzolovou aplikaci v jazyce C#, která bude simulovat jednoduchou evidenci knih v knihovně. Aplikace bude mít možnost přidávat knihy, vyhledávat knihy podle různých kritérií, exportovat knihy do souboru a zobrazovat různé statistiky.
+
+Požadavky na aplikaci
+Třída Kniha:
+
+Vytvořte třídu Kniha, která bude obsahovat následující vlastnosti:
+string Nazev – Název knihy.
+string Autor – Autor knihy.
+DateTime DatumVydani – Datum vydání knihy.
+string Zanr – Žánr knihy.
+int PocetStran – Počet stran knihy.
+Práce s kolekcemi:
+
+Použijte List<Kniha> pro ukládání knih. Na začátku by měl být seznam prázdný.
+Implementujte metody pro přidání knihy, vyhledávání knihy a odstranění knihy.
+Vyhledávání knih:
+
+Umožněte uživateli vyhledávat knihy podle:
+Jména autora
+Žánru
+Rozsahu počtu stran
+Pro vyhledávání použijte LINQ dotazy a umožněte filtrovat a řadit výsledky podle názvu nebo datumu vydání.
+Export knih:
+
+Implementujte funkci pro export knih do textového souboru. Každá kniha by měla být uložena na samostatném řádku ve formátu:
+Zkopírovat kód
+Nazev;Autor;DatumVydani;Zanr;PocetStran
+Použijte System.IO pro práci se soubory.
+Statistiky:
+
+Vytvořte funkci pro zobrazení následujících statistik:
+Celkový počet knih.
+Průměrný počet stran knih.
+Nejstarší a nejnovější kniha.
+Počet knih podle žánru (např. Kolik knih je beletrie, kolik naučná literatura apod.)
+Uživatelské rozhraní:
+
+Implementujte jednoduché textové uživatelské rozhraní, které umožní uživateli:
+Přidat novou knihu.
+Vyhledávat knihy podle kritérií.
+Zobrazit seznam všech knih.
+Exportovat knihy do souboru.
+Zobrazit statistiky o knihách.
+Ujistěte se, že každý krok programu má jasnou zpětnou vazbu.
+Zpracování výjimek:
+
+Ošetřete možné výjimky, které mohou nastat při práci se soubory nebo při zadávání vstupu od uživatele (např. špatně zadané datum).
+V případě chyby zobrazte uživateli srozumitelnou zprávu a nabídněte možnost pokračovat.
+Příklad vstupu a výstupu
+ */
+
+
 
 internal class Program
 {
-	private static void Main(string[] args)
+	class book
 	{
+		public string name;
+		public string author;
+		public DateTime DOR;
+		public string genre;
+		public int pages;
 
+		public book(string name, string author, DateTime DOR, string genre, int pages)
+		{
+			this.name = name;
+			this.author = author;
+			this.DOR = DOR;
+			this.genre = genre;
+			this.pages = pages;
+		}
+
+		public string bookToString()
+		{
+			return $"name: {name}, author: {author}, date of release: {DOR}, genre: {genre}, pages: {pages}";
+		}
+
+		public void saveToFile()
+		{
+			string fileName = $"{name} ({author})";
+			using (StreamWriter outputFile = new StreamWriter(Path.Combine("C:\\Users\\eliza\\Downloads", fileName + ".txt")))
+			{
+				outputFile.WriteLine(bookToString());
+			}
+		}
+	}
+
+	class library
+	{
+		List<book> books;
+
+		public library()
+		{
+			books = new List<book>();
+		}
+
+		public void addBook(book b)
+		{
+			if (!books.Contains(b))
+				books.Add(b);
+			else Console.WriteLine("cannot have duplicate books");
+		}
+
+		public void removeBook(book b)
+		{
+			if (!books.Contains(b))
+				books.Remove(b);
+			else Console.WriteLine("cannot find book");
+		}
+
+		public void searchAll(string s)
+		{
+			List<book> results = new List<book>();
+
+		}
+
+		List<book> searchByName(string n)
+		{
+			List<book> results = new List<book>();
+			foreach (book b in books)
+			{
+				if (b.name.Contains(n))
+				{
+					results.Add(b);
+				}
+			}
+			return results;
+		}
+		List<book> searchByAuthor(string n)
+		{
+			List<book> results = new List<book>();
+			foreach (book b in books)
+			{
+				if (b.author.Contains(n))
+				{
+					results.Add(b);
+				}
+			}
+			return results;
+
+		}
+	}
+
+	static void Main(string[] args)
+	{
+		book book1 = new book("name", "authror", new DateTime(24, 11, 5), "genr", 5);
+		book1.saveToFile();
 	}
 }

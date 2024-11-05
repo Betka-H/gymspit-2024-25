@@ -1,0 +1,14 @@
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\bin\Debug\net7.0\hw.exe
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\bin\Debug\net7.0\hw.deps.json
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\bin\Debug\net7.0\hw.runtimeconfig.json
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\bin\Debug\net7.0\hw.dll
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\bin\Debug\net7.0\hw.pdb
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\obj\Debug\net7.0\hw.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\obj\Debug\net7.0\hw.AssemblyInfoInputs.cache
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\obj\Debug\net7.0\hw.AssemblyInfo.cs
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\obj\Debug\net7.0\hw.csproj.CoreCompileInputs.cache
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\obj\Debug\net7.0\hw.dll
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\obj\Debug\net7.0\refint\hw.dll
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\obj\Debug\net7.0\hw.pdb
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\obj\Debug\net7.0\hw.genruntimeconfig.cache
+C:\Users\eliza\_vscode\school 24-25\gymspit-2024-25.worktrees\main\hw\obj\Debug\net7.0\ref\hw.dll
